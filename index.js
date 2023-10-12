@@ -22,6 +22,7 @@ const connect= async()=>{
 }
 
 //middleware
+
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
@@ -30,7 +31,7 @@ app.use("/api/auth",authRoute);
 app.use("/api/posts",postRoute);
 
 app.get("/users",(req,res)=>{
-    res.send("welocome to the users");
+    res.send("Welcome to the world")
 })
 
 app.listen(process.env.PORT,()=>{
