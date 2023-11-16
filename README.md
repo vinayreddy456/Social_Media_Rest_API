@@ -20,8 +20,8 @@ Ensure the following are installed on your system:
 
 # Set up environment variables:
 
-Create a .env file in the root directory.
-Define environment variables such as database connection details and secret keys. Example:
+    Create a .env file in the root directory.
+    Define environment variables such as database connection details and secret keys. Example:
            PORT=5000
            DB_CONNECTION_STRING=mongodb://localhost:27017/social_media_db JWT_SECRET=your_secret_key
 
@@ -35,26 +35,26 @@ Endpoints
 
 # Endpoints
 # Authentication
- Register: POST /api/auth/register
- Login: POST /api/auth/login
+    Register: POST /api/auth/register
+    Login: POST /api/auth/login
  
 # User Management
-Update User: PUT /api/users/:id
-Delete User: DELETE /api/users/:id
-Get User: GET /api/users/:id
-Follow User: POST /api/users/follow/:id
-Unfollow User: POST /api/users/unfollow/:id
+    Update User: PUT /api/users/:id
+    Delete User: DELETE /api/users/:id
+    Get User: GET /api/users/:id
+    Follow User: POST /api/users/follow/:id
+    Unfollow User: POST /api/users/unfollow/:id
 
 # Posts
-Create Post: POST /api/posts/
-Update Post: PUT /api/posts/:id
-Delete Post: DELETE /api/posts/:id
-Like Post: POST /api/posts/like/:id
-Dislike Post: POST /api/posts/dislike/:id
+    Create Post: POST /api/posts/
+    Update Post: PUT /api/posts/:id
+    Delete Post: DELETE /api/posts/:id
+    Like Post: POST /api/posts/like/:id
+    Dislike Post: POST /api/posts/dislike/:id
 
 
 # Database Setup
-# Start MongoDB:
+ Start MongoDB:
 
 Ensure your MongoDB server is running.
 Use a MongoDB GUI or command line to create a database named social_media_db.
