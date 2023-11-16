@@ -13,7 +13,7 @@ Ensure the following are installed on your system:
    MongoDB
  # Installation Steps
   # Clone the repository:
-      git clone https://github.com/vinayreddy456/social-media-rest-api.git
+      git clone https://github.com/vinayreddy456/Social_Media_Rest_API.git
     
  #  Install dependencies:
      npm install
