@@ -34,20 +34,6 @@ const Register=async (req, res) => {
         res.status(500).json(err);
     }
 }
-const llogin =async(req,res)=>{
-   try{
-    const user=await User.findOne({email:req.body.email});
-    !user && res.status(404).json("user not found");
-    const vaildated=await bcrypt.compare(req.body.password,user.password);
-    !vaildated && res.status(404).json("wrong password");
-    const {password,...others}=user._doc;
-    res.status(200).json(others);
-   }catch(err){
-       
-   res.status(500).json(err);
-
-   }
-}
 module.exports = {
     Register: Register,
     login: login
